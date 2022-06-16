@@ -17,7 +17,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="food-ordering-system" options="-parameters" />
+      <module name="food-ordering-system" options="" />
       <module name="order-application" options="-parameters" />
       <module name="order-application-service" options="-parameters" />
       <module name="order-container" options="-parameters" />
