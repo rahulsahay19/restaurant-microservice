@@ -6,10 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="order-application" />
         <module name="order-messaging" />
-        <module name="order-domain-core" />
         <module name="order-application-service" />
+        <module name="common-domain" />
+        <module name="order-application" />
+        <module name="order-domain-core" />
         <module name="order-dataaccess" />
         <module name="order-container" />
       </profile>
@@ -17,6 +18,8 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="common" options="" />
+      <module name="common-domain" options="-parameters" />
       <module name="food-ordering-system" options="" />
       <module name="order-application" options="-parameters" />
       <module name="order-application-service" options="-parameters" />

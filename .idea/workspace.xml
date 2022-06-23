@@ -4,22 +4,38 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8f53dca-a3ff-4a55-874c-2b75f2859352" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/img.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+    <list default="true" id="c8f53dca-a3ff-4a55-874c-2b75f2859352" name="Changes" comment="Added POM dependencies">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/common-domain/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/common-domain/src/main/java/org/food/ordering/system/domain/entity/AggregateRoot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/common-domain/src/main/java/org/food/ordering/system/domain/entity/BaseEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/common-domain/src/main/java/org/food/ordering/system/domain/event/DomainEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/common-domain/src/main/java/org/food/ordering/system/domain/valueobject/BaseId.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/common-domain/src/main/java/org/food/ordering/system/domain/valueobject/CustomerId.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/common-domain/src/main/java/org/food/ordering/system/domain/valueobject/Money.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/common-domain/src/main/java/org/food/ordering/system/domain/valueobject/OrderId.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/common-domain/src/main/java/org/food/ordering/system/domain/valueobject/OrderStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/common-domain/src/main/java/org/food/ordering/system/domain/valueobject/ProductId.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/common-domain/src/main/java/org/food/ordering/system/domain/valueobject/RestaurantId.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/order-application/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/order-application/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/order-container/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/order-container/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/order-dataaccess/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/order-dataaccess/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/order-domain/order-application-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/order-domain/order-application-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/order-messaging/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/order-messaging/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/order-domain/order-domain-core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/order-domain/order-domain-core/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -31,12 +47,16 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="flattenPackages" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
+    <option name="showVisibilityIcons" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -47,6 +67,11 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/images" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -55,8 +80,19 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1655407435563</updated>
-      <workItem from="1655407436837" duration="3248000" />
+      <workItem from="1655407436837" duration="3506000" />
+      <workItem from="1655447862435" duration="928000" />
+      <workItem from="1655537247897" duration="2146000" />
+      <workItem from="1655961802232" duration="1727000" />
     </task>
+    <task id="LOCAL-00001" summary="Added POM dependencies">
+      <created>1655411019289</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1655411019289</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -75,5 +111,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added POM dependencies" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added POM dependencies" />
   </component>
 </project>
