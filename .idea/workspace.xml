@@ -4,25 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8f53dca-a3ff-4a55-874c-2b75f2859352" name="Changes" comment="Added POM dependencies">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/common-domain/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/common-domain/src/main/java/org/food/ordering/system/domain/entity/AggregateRoot.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/common-domain/src/main/java/org/food/ordering/system/domain/entity/BaseEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/common-domain/src/main/java/org/food/ordering/system/domain/event/DomainEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/common-domain/src/main/java/org/food/ordering/system/domain/valueobject/BaseId.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/common-domain/src/main/java/org/food/ordering/system/domain/valueobject/CustomerId.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/common-domain/src/main/java/org/food/ordering/system/domain/valueobject/Money.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/common-domain/src/main/java/org/food/ordering/system/domain/valueobject/OrderId.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/common-domain/src/main/java/org/food/ordering/system/domain/valueobject/OrderStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/common-domain/src/main/java/org/food/ordering/system/domain/valueobject/ProductId.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/common-domain/src/main/java/org/food/ordering/system/domain/valueobject/RestaurantId.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="c8f53dca-a3ff-4a55-874c-2b75f2859352" name="Changes" comment="Added Value Objects and domain events">
+      <change afterPath="$PROJECT_DIR$/common/common-domain/src/main/java/org/food/ordering/system/domain/exception/DomainException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-domain-core/src/main/java/org/food/ordering/system/order/service/domain/entity/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-domain-core/src/main/java/org/food/ordering/system/order/service/domain/entity/OrderItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-domain-core/src/main/java/org/food/ordering/system/order/service/domain/entity/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-domain-core/src/main/java/org/food/ordering/system/order/service/domain/exception/OrderDomainException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-domain-core/src/main/java/org/food/ordering/system/order/service/domain/valueobject/OrderItemId.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-domain-core/src/main/java/org/food/ordering/system/order/service/domain/valueobject/StreetAddress.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-domain-core/src/main/java/org/food/ordering/system/order/service/domain/valueobject/TrackingId.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/order-domain/order-domain-core/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/order-domain/order-domain-core/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/common-domain/src/main/java/org/food/ordering/system/domain/valueobject/Money.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/common-domain/src/main/java/org/food/ordering/system/domain/valueobject/Money.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/common-domain/src/main/java/org/food/ordering/system/domain/valueobject/OrderId.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/common-domain/src/main/java/org/food/ordering/system/domain/valueobject/OrderId.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,13 +25,21 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -48,7 +49,6 @@
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="autoscrollToSource" value="true" />
-    <option name="flattenPackages" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
     <option name="showVisibilityIcons" value="true" />
@@ -66,8 +66,13 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.food.ordering.system.order.service.domain.exception" />
+      <recent name="org.food.ordering.system.order.service.domain.valueobject" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/images" />
     </key>
@@ -83,7 +88,7 @@
       <workItem from="1655407436837" duration="3506000" />
       <workItem from="1655447862435" duration="928000" />
       <workItem from="1655537247897" duration="2146000" />
-      <workItem from="1655961802232" duration="1727000" />
+      <workItem from="1655961802232" duration="7792000" />
     </task>
     <task id="LOCAL-00001" summary="Added POM dependencies">
       <created>1655411019289</created>
@@ -92,7 +97,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655411019289</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added Value Objects and domain events">
+      <created>1656001717180</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1656001717180</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -114,6 +126,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added POM dependencies" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added POM dependencies" />
+    <MESSAGE value="Added Value Objects and domain events" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Value Objects and domain events" />
   </component>
 </project>

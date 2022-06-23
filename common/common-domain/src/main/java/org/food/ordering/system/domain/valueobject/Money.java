@@ -6,6 +6,7 @@ import java.util.Objects;
 
 //Immutable value objects
 public class Money {
+    public static final Money ZERO = new Money(BigDecimal.ZERO);
     private final BigDecimal amount;
 
     public Money(BigDecimal amount) {
