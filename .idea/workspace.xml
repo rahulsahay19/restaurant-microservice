@@ -4,18 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8f53dca-a3ff-4a55-874c-2b75f2859352" name="Changes" comment="Added Value Objects and domain events">
-      <change afterPath="$PROJECT_DIR$/common/common-domain/src/main/java/org/food/ordering/system/domain/exception/DomainException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-domain-core/src/main/java/org/food/ordering/system/order/service/domain/entity/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-domain-core/src/main/java/org/food/ordering/system/order/service/domain/entity/OrderItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-domain-core/src/main/java/org/food/ordering/system/order/service/domain/entity/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-domain-core/src/main/java/org/food/ordering/system/order/service/domain/exception/OrderDomainException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-domain-core/src/main/java/org/food/ordering/system/order/service/domain/valueobject/OrderItemId.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-domain-core/src/main/java/org/food/ordering/system/order/service/domain/valueobject/StreetAddress.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-domain-core/src/main/java/org/food/ordering/system/order/service/domain/valueobject/TrackingId.java" afterDir="false" />
+    <list default="true" id="c8f53dca-a3ff-4a55-874c-2b75f2859352" name="Changes" comment="More Order domain logic">
+      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-domain-core/src/main/java/org/food/ordering/system/order/service/domain/entity/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-domain-core/src/main/java/org/food/ordering/system/order/service/domain/entity/Restaurant.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/common-domain/src/main/java/org/food/ordering/system/domain/valueobject/Money.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/common-domain/src/main/java/org/food/ordering/system/domain/valueobject/Money.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/common-domain/src/main/java/org/food/ordering/system/domain/valueobject/OrderId.java" beforeDir="false" afterPath="$PROJECT_DIR$/common/common-domain/src/main/java/org/food/ordering/system/domain/valueobject/OrderId.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/order-domain/order-domain-core/src/main/java/org/food/ordering/system/order/service/domain/entity/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/order-domain/order-domain-core/src/main/java/org/food/ordering/system/order/service/domain/entity/Order.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +81,8 @@
       <workItem from="1655407436837" duration="3506000" />
       <workItem from="1655447862435" duration="928000" />
       <workItem from="1655537247897" duration="2146000" />
-      <workItem from="1655961802232" duration="7792000" />
+      <workItem from="1655961802232" duration="8152000" />
+      <workItem from="1656051349223" duration="1535000" />
     </task>
     <task id="LOCAL-00001" summary="Added POM dependencies">
       <created>1655411019289</created>
@@ -104,7 +98,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656001717180</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="More Order domain logic">
+      <created>1656012545227</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1656012545227</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -127,6 +128,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added POM dependencies" />
     <MESSAGE value="Added Value Objects and domain events" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Value Objects and domain events" />
+    <MESSAGE value="More Order domain logic" />
+    <option name="LAST_COMMIT_MESSAGE" value="More Order domain logic" />
   </component>
 </project>
