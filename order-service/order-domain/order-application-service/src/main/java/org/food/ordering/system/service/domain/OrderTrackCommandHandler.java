@@ -11,4 +11,7 @@ public class OrderTrackCommandHandler {
     public TrackOrderResponse trackOrder(TrackOrderQuery trackOrderQuery){
 
     }
+
+    public static class OrderCreateHelper {
+    }
 }
