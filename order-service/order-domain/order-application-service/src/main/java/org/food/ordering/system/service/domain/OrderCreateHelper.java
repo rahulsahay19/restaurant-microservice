@@ -38,7 +38,7 @@ public class OrderCreateHelper {
         this.orderDataMapper = orderDataMapper;
     }
 
-    @Transactional
+    @Transactional //This will make the operation transactional
     public OrderCreatedEvent persistOrder(CreateOrderCommand createOrderCommand){
         chekCustomer(createOrderCommand.getCustomerId());
         Restaurant restaurant =  checkRestaurant(createOrderCommand);
