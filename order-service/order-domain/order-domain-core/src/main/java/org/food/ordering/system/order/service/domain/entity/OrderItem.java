@@ -83,7 +83,7 @@ public class OrderItem extends BaseEntity<OrderItemId> {
             return this;
         }
 
-        public Builder quanity(int val) {
+        public Builder quantity(int val) {
             quanity = val;
             return this;
         }
