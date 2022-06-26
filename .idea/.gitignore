@@ -58,6 +58,8 @@ local.properties
 *.ipr
 *.ids
 *.orig
+/.idea/
+target/
 
 ######################
 # Visual Studio Code
@@ -140,3 +142,11 @@ Desktop.ini
 .eslintcache
 /.idea/
 
+
+*.class
+*.jar
+*.war
+*.ear
+*.logs
+*.iml
+.idea/

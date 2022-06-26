@@ -1,0 +1,11 @@
+package org.food.ordering.system.order.service.domain.ports.output;
+
+import org.food.ordering.system.order.service.domain.entity.Restaurant;
+import org.springframework.stereotype.Service;
+
+import java.util.Optional;
+
+@Service
+public interface RestaurantRepository {
+    Optional<Restaurant> findRestaurantInformation(Restaurant restaurant);
+}
