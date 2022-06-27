@@ -150,3 +150,13 @@ Desktop.ini
 *.logs
 *.iml
 .idea/
+
+######################
+# Kafka related
+######################
+/volumes/
+*.index
+*.log
+*.timeindex
+*-epoch-checkpoint
+*-partition-metadata
