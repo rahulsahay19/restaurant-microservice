@@ -4,132 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8f53dca-a3ff-4a55-874c-2b75f2859352" name="Changes" comment="Finished Order application testing">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/common-domain/target/classes/org/food/ordering/system/domain/event/publisher/DomainEventPublisher.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/common-domain/target/classes/org/food/ordering/system/domain/exception/DomainException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/common-domain/target/classes/org/food/ordering/system/domain/valueobject/OrderApprovalStatus.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/common-domain/target/classes/org/food/ordering/system/domain/valueobject/PaymentStatus.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/docker-compose/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/docker-compose/common.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/docker-compose/init_kafka.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/docker-compose/kafka_cluster.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/docker-compose/zookeeper.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/kafka/kafka-config-data/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/kafka/kafka-config-data/src/main/java/org/food/ordering/system/kafka/config/data/KafkaConfigData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/kafka/kafka-config-data/src/main/java/org/food/ordering/system/kafka/config/data/KafkaConsumerConfigData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/kafka/kafka-config-data/src/main/java/org/food/ordering/system/kafka/config/data/KafkaProducerConfigData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/kafka/kafka-consumer/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/kafka/kafka-consumer/src/main/java/org/food/ordering/system/kafka/consumer/KafkaConsumer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/kafka/kafka-consumer/src/main/java/org/food/ordering/system/kafka/consumer/config/KafkaConsumerConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/kafka/kafka-model/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/kafka/kafka-model/src/main/java/org/food/ordering/system/kafka/order/avro/model/OrderApprovalStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/kafka/kafka-model/src/main/java/org/food/ordering/system/kafka/order/avro/model/PaymentOrderStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/kafka/kafka-model/src/main/java/org/food/ordering/system/kafka/order/avro/model/PaymentRequestAvroModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/kafka/kafka-model/src/main/java/org/food/ordering/system/kafka/order/avro/model/PaymentResponseAvroModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/kafka/kafka-model/src/main/java/org/food/ordering/system/kafka/order/avro/model/PaymentStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/kafka/kafka-model/src/main/java/org/food/ordering/system/kafka/order/avro/model/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/kafka/kafka-model/src/main/java/org/food/ordering/system/kafka/order/avro/model/RestaurantApprovalRequestAvroModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/kafka/kafka-model/src/main/java/org/food/ordering/system/kafka/order/avro/model/RestaurantApprovalResponseAvroModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/kafka/kafka-model/src/main/java/org/food/ordering/system/kafka/order/avro/model/RestaurantOrderStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/kafka/kafka-model/src/main/resources/avro/payment_request.avsc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/kafka/kafka-model/src/main/resources/avro/payment_response.avsc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/kafka/kafka-model/src/main/resources/avro/restaurant_approval_request.avsc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/kafka/kafka-model/src/main/resources/avro/restaurant_approval_response.avsc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/kafka/kafka-model/target/classes/avro/payment_request.avsc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/kafka/kafka-model/target/classes/avro/payment_response.avsc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/kafka/kafka-model/target/classes/avro/restaurant_approval_request.avsc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/kafka/kafka-model/target/classes/avro/restaurant_approval_response.avsc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/kafka/kafka-model/target/classes/org/food/ordering/system/kafka/order/avro/model/OrderApprovalStatus.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/kafka/kafka-model/target/classes/org/food/ordering/system/kafka/order/avro/model/PaymentOrderStatus.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/kafka/kafka-model/target/classes/org/food/ordering/system/kafka/order/avro/model/PaymentRequestAvroModel$Builder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/kafka/kafka-model/target/classes/org/food/ordering/system/kafka/order/avro/model/PaymentRequestAvroModel.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/kafka/kafka-model/target/classes/org/food/ordering/system/kafka/order/avro/model/PaymentResponseAvroModel$Builder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/kafka/kafka-model/target/classes/org/food/ordering/system/kafka/order/avro/model/PaymentResponseAvroModel.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/kafka/kafka-model/target/classes/org/food/ordering/system/kafka/order/avro/model/PaymentStatus.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/kafka/kafka-model/target/classes/org/food/ordering/system/kafka/order/avro/model/Product$Builder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/kafka/kafka-model/target/classes/org/food/ordering/system/kafka/order/avro/model/Product.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/kafka/kafka-model/target/classes/org/food/ordering/system/kafka/order/avro/model/RestaurantApprovalRequestAvroModel$Builder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/kafka/kafka-model/target/classes/org/food/ordering/system/kafka/order/avro/model/RestaurantApprovalRequestAvroModel.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/kafka/kafka-model/target/classes/org/food/ordering/system/kafka/order/avro/model/RestaurantApprovalResponseAvroModel$Builder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/kafka/kafka-model/target/classes/org/food/ordering/system/kafka/order/avro/model/RestaurantApprovalResponseAvroModel.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/kafka/kafka-model/target/classes/org/food/ordering/system/kafka/order/avro/model/RestaurantOrderStatus.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/kafka/kafka-model/target/kafka-model-1.0-SNAPSHOT.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/kafka/kafka-model/target/maven-archiver/pom.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/kafka/kafka-model/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/kafka/kafka-model/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/kafka/kafka-model/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/kafka/kafka-model/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/kafka/kafka-producer/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/kafka/kafka-producer/src/main/java/org/food/ordering/system/kafka/producer/KafkaMessageHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/kafka/kafka-producer/src/main/java/org/food/ordering/system/kafka/producer/KafkaProducerConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/kafka/kafka-producer/src/main/java/org/food/ordering/system/kafka/producer/exception/KafkaProducerException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/kafka/kafka-producer/src/main/java/org/food/ordering/system/kafka/producer/service/KafkaProducer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/kafka/kafka-producer/src/main/java/org/food/ordering/system/kafka/producer/service/impl/KafkaProducerImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/kafka/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infrastructure/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-container/target/classes/org/food/ordering/system/order/service/domain/BeanConfiguration.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-container/target/classes/org/food/ordering/system/order/service/domain/OrderServiceApplication.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-application-service/target/classes/org/food/ordering/system/order/service/domain/OrderApplicationServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-application-service/target/classes/org/food/ordering/system/order/service/domain/OrderCreateCommandHandler.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-application-service/target/classes/org/food/ordering/system/order/service/domain/OrderCreateHelper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-application-service/target/classes/org/food/ordering/system/order/service/domain/OrderTrackCommandHandler$OrderCreateHelper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-application-service/target/classes/org/food/ordering/system/order/service/domain/OrderTrackCommandHandler.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-application-service/target/classes/org/food/ordering/system/order/service/domain/PaymentResponseMessageListenerImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-application-service/target/classes/org/food/ordering/system/order/service/domain/RestaurantApprovalResponseMessageListenerImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-application-service/target/classes/org/food/ordering/system/order/service/domain/dto/create/CreateOrderCommand$CreateOrderCommandBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-application-service/target/classes/org/food/ordering/system/order/service/domain/dto/create/CreateOrderCommand.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-application-service/target/classes/org/food/ordering/system/order/service/domain/dto/create/CreateOrderResponse$CreateOrderResponseBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-application-service/target/classes/org/food/ordering/system/order/service/domain/dto/create/CreateOrderResponse.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-application-service/target/classes/org/food/ordering/system/order/service/domain/dto/create/OrderAddress$OrderAddressBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-application-service/target/classes/org/food/ordering/system/order/service/domain/dto/create/OrderAddress.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-application-service/target/classes/org/food/ordering/system/order/service/domain/dto/create/OrderItem$OrderItemBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-application-service/target/classes/org/food/ordering/system/order/service/domain/dto/create/OrderItem.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-application-service/target/classes/org/food/ordering/system/order/service/domain/dto/message/PaymentResponse$PaymentResponseBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-application-service/target/classes/org/food/ordering/system/order/service/domain/dto/message/PaymentResponse.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-application-service/target/classes/org/food/ordering/system/order/service/domain/dto/message/RestaurantApprovalResponse$RestaurantApprovalResponseBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-application-service/target/classes/org/food/ordering/system/order/service/domain/dto/message/RestaurantApprovalResponse.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-application-service/target/classes/org/food/ordering/system/order/service/domain/dto/track/TrackOrderQuery$TrackOrderQueryBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-application-service/target/classes/org/food/ordering/system/order/service/domain/dto/track/TrackOrderQuery.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-application-service/target/classes/org/food/ordering/system/order/service/domain/dto/track/TrackOrderResponse$TrackOrderResponseBuilder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-application-service/target/classes/org/food/ordering/system/order/service/domain/dto/track/TrackOrderResponse.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-application-service/target/classes/org/food/ordering/system/order/service/domain/mapper/OrderDataMapper.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-application-service/target/classes/org/food/ordering/system/order/service/domain/ports/input/message/listener/payment/PaymentResponseMessageListener.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-application-service/target/classes/org/food/ordering/system/order/service/domain/ports/input/message/listener/restaurantapproval/RestaurantApprovalResponseMessageListener.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-application-service/target/classes/org/food/ordering/system/order/service/domain/ports/input/service/OrderApplicationService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-application-service/target/classes/org/food/ordering/system/order/service/domain/ports/output/CustomerRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-application-service/target/classes/org/food/ordering/system/order/service/domain/ports/output/OrderRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-application-service/target/classes/org/food/ordering/system/order/service/domain/ports/output/RestaurantRepository.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-application-service/target/classes/org/food/ordering/system/order/service/domain/ports/output/message/publisher/payment/OrderCancelledPaymentRequestMessagePublisher.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-application-service/target/classes/org/food/ordering/system/order/service/domain/ports/output/message/publisher/payment/OrderCreatedPaymentRequestMessagePublisher.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-application-service/target/classes/org/food/ordering/system/order/service/domain/ports/output/message/publisher/restaurantapproval/OrderPaidRestaurantRequestMessagePublisher.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-application-service/target/test-classes/org/food/ordering/system/order/service/domain/OrderApplicationServiceTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-application-service/target/test-classes/org/food/ordering/system/order/service/domain/OrderTestConfiguration.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-domain-core/target/classes/org/food/ordering/system/order/service/domain/OrderDomainService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-domain-core/target/classes/org/food/ordering/system/order/service/domain/OrderDomainServiceImpl.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-domain-core/target/classes/org/food/ordering/system/order/service/domain/entity/Customer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-domain-core/target/classes/org/food/ordering/system/order/service/domain/entity/Order$Builder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-domain-core/target/classes/org/food/ordering/system/order/service/domain/entity/Order.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-domain-core/target/classes/org/food/ordering/system/order/service/domain/entity/OrderItem$Builder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-domain-core/target/classes/org/food/ordering/system/order/service/domain/entity/OrderItem.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-domain-core/target/classes/org/food/ordering/system/order/service/domain/entity/Product.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-domain-core/target/classes/org/food/ordering/system/order/service/domain/entity/Restaurant$Builder.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-domain-core/target/classes/org/food/ordering/system/order/service/domain/entity/Restaurant.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-domain-core/target/classes/org/food/ordering/system/order/service/domain/event/OrderCancelledEvent.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-domain-core/target/classes/org/food/ordering/system/order/service/domain/event/OrderCreatedEvent.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-domain-core/target/classes/org/food/ordering/system/order/service/domain/event/OrderEvent.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-domain-core/target/classes/org/food/ordering/system/order/service/domain/event/OrderPaidEvent.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-domain-core/target/classes/org/food/ordering/system/order/service/domain/exception/OrderDomainException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-domain-core/target/classes/org/food/ordering/system/order/service/domain/exception/OrderNotFoundException.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-domain-core/target/classes/org/food/ordering/system/order/service/domain/valueobject/OrderItemId.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-domain-core/target/classes/org/food/ordering/system/order/service/domain/valueobject/StreetAddress.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-domain/order-domain-core/target/classes/org/food/ordering/system/order/service/domain/valueobject/TrackingId.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+    <list default="true" id="c8f53dca-a3ff-4a55-874c-2b75f2859352" name="Changes" comment="Finished Kafka module">
+      <change afterPath="$PROJECT_DIR$/common/common-application/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/common-application/src/main/java/org/food/ordering/system/application/handler/ErrorDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/common/common-application/src/main/java/org/food/ordering/system/application/handler/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/order-application/src/main/java/org/food/ordering/system/order/service/application/exception/handler/OrderGlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/order-application/src/main/java/org/food/ordering/system/order/service/application/rest/OrderController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/order-application/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/order-application/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -191,6 +76,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.food.ordering.system.order.service.application.exception.handler" />
       <recent name="org.food.ordering.system.service.domain.dto.create" />
       <recent name="org.food.ordering.system.order.service.domain.exception" />
       <recent name="org.food.ordering.system.order.service.domain.valueobject" />
@@ -318,7 +204,10 @@
       <workItem from="1656270460845" duration="350000" />
       <workItem from="1656308155856" duration="2753000" />
       <workItem from="1656311276406" duration="6520000" />
-      <workItem from="1656346925842" duration="2384000" />
+      <workItem from="1656346925842" duration="4005000" />
+      <workItem from="1656353892310" duration="537000" />
+      <workItem from="1656398321912" duration="2278000" />
+      <workItem from="1656699954806" duration="4139000" />
     </task>
     <task id="LOCAL-00001" summary="Added POM dependencies">
       <created>1655411019289</created>
@@ -383,7 +272,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656270502504</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Finished Kafka module">
+      <created>1656349639624</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1656349639624</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -415,7 +311,8 @@
     <MESSAGE value="1st Publish Option" />
     <MESSAGE value="Merged with master" />
     <MESSAGE value="Finished Order application testing" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished Order application testing" />
+    <MESSAGE value="Finished Kafka module" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished Kafka module" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
