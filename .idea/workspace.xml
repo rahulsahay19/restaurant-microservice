@@ -4,18 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8f53dca-a3ff-4a55-874c-2b75f2859352" name="Changes" comment="Finished Kafka module">
-      <change afterPath="$PROJECT_DIR$/common/common-application/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/common-application/src/main/java/org/food/ordering/system/application/handler/ErrorDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/common/common-application/src/main/java/org/food/ordering/system/application/handler/GlobalExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-application/src/main/java/org/food/ordering/system/order/service/application/exception/handler/OrderGlobalExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-application/src/main/java/org/food/ordering/system/order/service/application/rest/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+    <list default="true" id="c8f53dca-a3ff-4a55-874c-2b75f2859352" name="Changes" comment="Implemented Global Exception handler">
+      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/order-dataaccess/src/main/java/org/food/ordering/system/order/service/dataaccess/order/entity/OrderAddressEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/order-dataaccess/src/main/java/org/food/ordering/system/order/service/dataaccess/order/entity/OrderEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/order-dataaccess/src/main/java/org/food/ordering/system/order/service/dataaccess/order/entity/OrderItemEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/order-dataaccess/src/main/java/org/food/ordering/system/order/service/dataaccess/order/entity/OrderItemEntityId.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/common/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/order-application/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/order-application/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/order-dataaccess/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/order-dataaccess/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +23,7 @@
       <list>
         <option value="Enum" />
         <option value="Interface" />
+        <option value="com.haulmont.jpb.JpaEntity" />
         <option value="Class" />
       </list>
     </option>
@@ -42,6 +39,22 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="false" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
+      </map>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -63,7 +76,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/infrastructure/kafka/kafka-model/src/main/resources/avro" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/order-service/order-dataaccess/src/main/java/org/food/ordering/system/order/service/dataaccess/restaurant" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -76,12 +89,15 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.food.ordering.system.order.service.dataaccess.order.entity" />
       <recent name="org.food.ordering.system.order.service.application.exception.handler" />
       <recent name="org.food.ordering.system.service.domain.dto.create" />
       <recent name="org.food.ordering.system.order.service.domain.exception" />
       <recent name="org.food.ordering.system.order.service.domain.valueobject" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/order-service/order-dataaccess/src/main/java/org/food/ordering/system/order/service/dataaccess/restaurant" />
+      <recent name="$PROJECT_DIR$/order-service/order-dataaccess/src/main/java/org/food/ordering/system/order/service/dataaccess/customer" />
       <recent name="$PROJECT_DIR$/infrastructure/kafka/kafka-model/src/main/resources/avro" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -177,11 +193,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.OrderApplicationServiceTest (1)" />
+        <item itemvalue="JUnit.OrderApplicationServiceTest.testCreateOrder" />
+        <item itemvalue="JUnit.OrderApplicationServiceTest.testCreateOrderWithWrongTotalPrice" />
         <item itemvalue="JUnit.OrderApplicationServiceTest.testCreateOrderWithPassiveRestaurant" />
         <item itemvalue="JUnit.OrderApplicationServiceTest.testCreateOrder (1)" />
-        <item itemvalue="JUnit.OrderApplicationServiceTest.testCreateOrderWithWrongTotalPrice" />
-        <item itemvalue="JUnit.OrderApplicationServiceTest.testCreateOrder" />
+        <item itemvalue="JUnit.OrderApplicationServiceTest (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -207,7 +223,8 @@
       <workItem from="1656346925842" duration="4005000" />
       <workItem from="1656353892310" duration="537000" />
       <workItem from="1656398321912" duration="2278000" />
-      <workItem from="1656699954806" duration="4139000" />
+      <workItem from="1656699954806" duration="4416000" />
+      <workItem from="1656772488030" duration="2079000" />
     </task>
     <task id="LOCAL-00001" summary="Added POM dependencies">
       <created>1655411019289</created>
@@ -279,7 +296,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656349639624</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Implemented Global Exception handler">
+      <created>1656704882983</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1656704882983</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -312,7 +336,8 @@
     <MESSAGE value="Merged with master" />
     <MESSAGE value="Finished Order application testing" />
     <MESSAGE value="Finished Kafka module" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished Kafka module" />
+    <MESSAGE value="Implemented Global Exception handler" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented Global Exception handler" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
