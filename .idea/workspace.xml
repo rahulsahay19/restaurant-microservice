@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8f53dca-a3ff-4a55-874c-2b75f2859352" name="Changes" comment="Implemented Global Exception handler">
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-dataaccess/src/main/java/org/food/ordering/system/order/service/dataaccess/order/entity/OrderAddressEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-dataaccess/src/main/java/org/food/ordering/system/order/service/dataaccess/order/entity/OrderEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-dataaccess/src/main/java/org/food/ordering/system/order/service/dataaccess/order/entity/OrderItemEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order-service/order-dataaccess/src/main/java/org/food/ordering/system/order/service/dataaccess/order/entity/OrderItemEntityId.java" afterDir="false" />
+    <list default="true" id="c8f53dca-a3ff-4a55-874c-2b75f2859352" name="Changes" comment="Added JPA Models">
+      <change afterPath="$PROJECT_DIR$/order-service/order-dataaccess/src/main/java/org/food/ordering/system/order/service/dataaccess/order/mapper/OrderDataAccessMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order-service/order-dataaccess/src/main/java/org/food/ordering/system/order/service/dataaccess/order/repository/OrderJPARepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order-service/order-dataaccess/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/order-dataaccess/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order-service/order-domain/order-domain-core/src/main/java/org/food/ordering/system/order/service/domain/entity/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/order-service/order-domain/order-domain-core/src/main/java/org/food/ordering/system/order/service/domain/entity/Order.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -224,7 +221,9 @@
       <workItem from="1656353892310" duration="537000" />
       <workItem from="1656398321912" duration="2278000" />
       <workItem from="1656699954806" duration="4416000" />
-      <workItem from="1656772488030" duration="2079000" />
+      <workItem from="1656772488030" duration="2656000" />
+      <workItem from="1657027421430" duration="274000" />
+      <workItem from="1657027716212" duration="3383000" />
     </task>
     <task id="LOCAL-00001" summary="Added POM dependencies">
       <created>1655411019289</created>
@@ -303,7 +302,14 @@
       <option name="project" value="LOCAL" />
       <updated>1656704882983</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Added JPA Models">
+      <created>1656774811033</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1656774811033</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -337,7 +343,8 @@
     <MESSAGE value="Finished Order application testing" />
     <MESSAGE value="Finished Kafka module" />
     <MESSAGE value="Implemented Global Exception handler" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented Global Exception handler" />
+    <MESSAGE value="Added JPA Models" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added JPA Models" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -22,6 +22,7 @@ public class Order extends AggregateRoot<OrderId> {
     private TrackingId trackingId;
     private OrderStatus orderStatus;
     private List<String> failureMessages;
+    public static final String DELIMITER = ",";
 
     public void initializeOrder(){
         setId(new OrderId(UUID.randomUUID()));
@@ -180,7 +181,7 @@ public class Order extends AggregateRoot<OrderId> {
         private Builder() {
         }
 
-        public Builder OrderId(OrderId val) {
+        public Builder orderId(OrderId val) {
             orderId = val;
             return this;
         }
