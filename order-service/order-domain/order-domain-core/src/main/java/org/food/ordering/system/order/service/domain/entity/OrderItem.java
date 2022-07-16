@@ -49,7 +49,7 @@ public class OrderItem extends BaseEntity<OrderItemId> {
         return product;
     }
 
-    public int getQuanity() {
+    public int getQuantity() {
         return quantity;
     }
 
