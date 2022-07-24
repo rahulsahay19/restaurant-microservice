@@ -29,8 +29,8 @@
     <file url="file://$PROJECT_DIR$/payment-service/payment-container/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/payment-service/payment-dataaccess/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/payment-service/payment-domain/payment-application-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/payment-service/payment-domain/payment-application-service/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/payment-service/payment-domain/payment-domain-core/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/payment-service/payment-domain/payment-domain-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/payment-service/payment-domain/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/payment-service/payment-domain/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/payment-service/payment-messaging/src/main/java" charset="UTF-8" />
