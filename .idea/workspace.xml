@@ -4,32 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c8f53dca-a3ff-4a55-874c-2b75f2859352" name="Changes" comment="Completed order implementation">
-      <change afterPath="$PROJECT_DIR$/payment-service/payment-container/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/payment-service/payment-dataaccess/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/payment-service/payment-domain/payment-domain-core/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/payment-service/payment-domain/payment-domain-core/src/main/java/org/food/ordering/system/payment/service/domain/entity/CreditEntry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/payment-service/payment-domain/payment-domain-core/src/main/java/org/food/ordering/system/payment/service/domain/entity/CreditHistory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/payment-service/payment-domain/payment-domain-core/src/main/java/org/food/ordering/system/payment/service/domain/entity/Payment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/payment-service/payment-domain/payment-domain-core/src/main/java/org/food/ordering/system/payment/service/domain/event/PaymentCancelledEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/payment-service/payment-domain/payment-domain-core/src/main/java/org/food/ordering/system/payment/service/domain/event/PaymentCompletedEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/payment-service/payment-domain/payment-domain-core/src/main/java/org/food/ordering/system/payment/service/domain/event/PaymentEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/payment-service/payment-domain/payment-domain-core/src/main/java/org/food/ordering/system/payment/service/domain/event/PaymentFailedEvent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/payment-service/payment-domain/payment-domain-core/src/main/java/org/food/ordering/system/payment/service/domain/exception/PaymentDomainException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/payment-service/payment-domain/payment-domain-core/src/main/java/org/food/ordering/system/payment/service/domain/exception/PaymentNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/payment-service/payment-domain/payment-domain-core/src/main/java/org/food/ordering/system/payment/service/domain/valueobject/CreditEntryId.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/payment-service/payment-domain/payment-domain-core/src/main/java/org/food/ordering/system/payment/service/domain/valueobject/CreditHistoryId.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/payment-service/payment-domain/payment-domain-core/src/main/java/org/food/ordering/system/payment/service/domain/valueobject/PaymentId.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/payment-service/payment-domain/payment-domain-core/src/main/java/org/food/ordering/system/payment/service/domain/valueobject/TransactionType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/payment-service/payment-domain/payment-domain-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/payment-service/payment-domain/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/payment-service/payment-messaging/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/payment-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="c8f53dca-a3ff-4a55-874c-2b75f2859352" name="Changes" comment="Created Payment Structure">
+      <change afterPath="$PROJECT_DIR$/common/common-domain/src/main/java/org/food/ordering/system/domain/DomainConstants.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/payment-domain/payment-domain-core/src/main/java/org/food/ordering/system/payment/service/domain/PaymentDomainService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/payment-service/payment-domain/payment-domain-core/src/main/java/org/food/ordering/system/payment/service/domain/PaymentDomainServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment-service/payment-domain/payment-domain-core/src/main/java/org/food/ordering/system/payment/service/domain/event/PaymentCancelledEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/payment-service/payment-domain/payment-domain-core/src/main/java/org/food/ordering/system/payment/service/domain/event/PaymentCancelledEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/payment-service/payment-domain/payment-domain-core/src/main/java/org/food/ordering/system/payment/service/domain/event/PaymentCompletedEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/payment-service/payment-domain/payment-domain-core/src/main/java/org/food/ordering/system/payment/service/domain/event/PaymentCompletedEvent.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,8 +21,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="com.haulmont.jpb.JpaEntity" />
-        <option value="Interface" />
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -264,7 +245,8 @@
       <workItem from="1658296657282" duration="487000" />
       <workItem from="1658383020813" duration="481000" />
       <workItem from="1658492913513" duration="918000" />
-      <workItem from="1658497173479" duration="3753000" />
+      <workItem from="1658497173479" duration="4903000" />
+      <workItem from="1658665902571" duration="3543000" />
     </task>
     <task id="LOCAL-00001" summary="Added POM dependencies">
       <created>1655411019289</created>
@@ -378,7 +360,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657973856359</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Created Payment Structure">
+      <created>1658501235113</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1658501235113</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -417,7 +406,8 @@
     <MESSAGE value="Order Entity Data access completed" />
     <MESSAGE value="Added customer and restaurant implementation" />
     <MESSAGE value="Completed order implementation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Completed order implementation" />
+    <MESSAGE value="Created Payment Structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created Payment Structure" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
