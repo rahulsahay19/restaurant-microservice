@@ -18,13 +18,19 @@
         <module name="payment-dataaccess" />
         <module name="order-dataaccess" />
         <module name="order-container" />
+        <module name="restaurant-container" />
         <module name="order-messaging" />
         <module name="payment-application-service" />
+        <module name="restaurant-dataaccess" />
         <module name="payment-container" />
         <module name="common-domain" />
         <module name="order-application" />
+        <module name="restaurant-domain-core" />
         <module name="order-domain-core" />
         <module name="payment-domain-core" />
+        <module name="restaurant-application-service" />
+        <module name="common-dataaccess" />
+        <module name="restaurant-messaging" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -35,6 +41,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="common" options="" />
       <module name="common-application" options="-parameters" />
+      <module name="common-dataaccess" options="-parameters" />
       <module name="common-domain" options="-parameters" />
       <module name="customer-service" options="-parameters" />
       <module name="food-ordering-system" options="" />
@@ -59,7 +66,14 @@
       <module name="payment-domain-core" options="-parameters" />
       <module name="payment-domain-service" options="-parameters" />
       <module name="payment-messaging" options="-parameters" />
-      <module name="payment-service" options="-parameters" />
+      <module name="payment-service" options="" />
+      <module name="restaurant-application-service" options="-parameters" />
+      <module name="restaurant-container" options="-parameters" />
+      <module name="restaurant-dataaccess" options="-parameters" />
+      <module name="restaurant-domain" options="" />
+      <module name="restaurant-domain-core" options="-parameters" />
+      <module name="restaurant-messaging" options="-parameters" />
+      <module name="restaurant-service" options="" />
     </option>
   </component>
 </project>
