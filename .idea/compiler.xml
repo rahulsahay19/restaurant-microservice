@@ -62,7 +62,7 @@
       <module name="payment-application-service" options="-parameters" />
       <module name="payment-container" options="-parameters" />
       <module name="payment-dataaccess" options="-parameters" />
-      <module name="payment-domain" options="" />
+      <module name="payment-domain" options="-parameters" />
       <module name="payment-domain-core" options="-parameters" />
       <module name="payment-domain-service" options="-parameters" />
       <module name="payment-messaging" options="-parameters" />
