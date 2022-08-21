@@ -17,6 +17,10 @@
     <dependencies>
         <dependency>
             <groupId>org.food.ordering.system</groupId>
+            <artifactId>saga</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.food.ordering.system</groupId>
             <artifactId>order-domain-core</artifactId>
         </dependency>
         <dependency>
